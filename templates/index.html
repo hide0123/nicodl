@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>nicodl</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+
+</head>
+
+<body>
+  
+  <h1>nicodl</h1>
+
+  <form action="download" method="post" target="_blank">
+    <input type="text" size="40" id="url" name="url" autocomplete="off" required>
+    <br>
+    <input type="submit" value="Download">
+
+  </form>
+
+</body>
+</html>
