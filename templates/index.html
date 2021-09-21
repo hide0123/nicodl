@@ -2,19 +2,24 @@
 <html>
   <head>
     <title>nicodl</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="keywords" content="nicodl,ニコニコ動画,保存,ダウンロード>
+    <meta name="description" content="nicodl - Download your favorite Niconico videos.">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
 
 </head>
 
 <body>
   
-  <h1>nicodl</h1>
+  <header><a href="/">nicodl</a></header>
+
+  <p>Download your favorite Niconico videos.</p>
 
   <form action="download" method="post" target="_blank">
-    <input type="text" size="40" id="url" name="url" autocomplete="off" required>
+    <input type="text" size="40" id="url" name="url" autocomplete="off" placeholder="Paste link here..." required>
     <br>
-    <input type="submit" value="Download">
+    <input type="submit" value="Download" id="download">
 
   </form>
 
