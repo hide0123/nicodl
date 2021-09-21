@@ -1,2 +1,2 @@
 Flask
-niconico_dl
+git+https://github.com/tasuren/niconico_dl.git
